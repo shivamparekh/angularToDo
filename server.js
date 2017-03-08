@@ -1,17 +1,12 @@
 // packages
 
 var bodyParser = require('body-parser');
-var mongoose = require('mongoose');
 var express = require('express');
 var logger = require('morgan');
 
 // port
 
 var PORT = process.env.PORT || 3000;
-
-// set mongoose to leverage built in JavaScript ES6 Promises
-
-mongoose.Promise = Promise;
 
 // create app
 
@@ -23,7 +18,11 @@ app.use(logger("dev"));
 
 // body-parser
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+app.use(bodyParser.json({ type: 'application/*+json' }));
+app.use(bodyParser.raw({ type: 'application/vnd.custom-type' }));
+app.use(bodyParser.text({ type: 'text/html' }));
 
 // static directory
 
