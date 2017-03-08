@@ -26,7 +26,9 @@
 
 </head>
 
-<body ng-app="toDoList">
+<body ng-app="toDo">
+
+	<navbar></navbar>
 
     <h1> To Do </h1>
 
@@ -36,19 +38,22 @@
 
 	<!-- We need to include EVERY JS file for our application here -->
 
-	<script src="toDoList/toDoList.module.js"></script>
+	<script src="toDo/toDo.module.js"></script>
 
 	<script src="toDo/features/create/create.module.js"></script>
 	<script src="toDo/features/create/create.controller.js"></script>
-	<script src="toDo/features/create/create.routes.js"></script>
+	<script src="toDo/features/create/create.route.js"></script>
 
 	<script src="toDo/features/list/list.module.js"></script>
 	<script src="toDo/features/list/list.controller.js"></script>
-	<script src="toDo/features/list/list.routes.js"></script>
+	<script src="toDo/features/list/list.route.js"></script>
 
 	<script src="toDo/features/completed/completed.module.js"></script>
 	<script src="toDo/features/completed/completed.controller.js"></script>
-	<script src="toDo/features/completed/completed.routes.js"></script>
+	<script src="toDo/features/completed/completed.route.js"></script>
+
+	<script src="toDo/features/components/navbar/navbar.directive.js"></script>
+	<script src="toDo/features/components/navbar/navbar.module.js"></script>
 
 </body>
 

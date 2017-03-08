@@ -12,6 +12,9 @@ var PORT = process.env.PORT || 3000;
 
 var app = express();
 
+var db = require('./models/connection.js');
+var Todo = require('./models/todo.model.js');
+
 // morgan
 
 app.use(logger("dev"));
