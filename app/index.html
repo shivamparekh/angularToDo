@@ -4,11 +4,51 @@
 
 <head>
 
-	<title>To-Do</title>
+	<!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Angular library and the Angular UI-Router library -->
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.min.js"></script>
+
+    <title>To-Do</title>
 
 </head>
 
-<body>
+<body ng-app="toDoList">
+
+    <h1> To Do </h1>
+
+    <!-- ui-view directive -->
+
+	<ui-view></ui-view>
+
+	<!-- We need to include EVERY JS file for our application here -->
+
+	<script src="toDoList/toDoList.module.js"></script>
+
+	<script src="toDo/features/create/create.module.js"></script>
+	<script src="toDo/features/create/create.controller.js"></script>
+	<script src="toDo/features/create/create.routes.js"></script>
+
+	<script src="toDo/features/list/list.module.js"></script>
+	<script src="toDo/features/list/list.controller.js"></script>
+	<script src="toDo/features/list/list.routes.js"></script>
+
+	<script src="toDo/features/completed/completed.module.js"></script>
+	<script src="toDo/features/completed/completed.controller.js"></script>
+	<script src="toDo/features/completed/completed.routes.js"></script>
 
 </body>
 
