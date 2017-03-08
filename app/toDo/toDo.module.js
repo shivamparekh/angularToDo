@@ -6,6 +6,12 @@ angular
 
         'ui.router',
 
+        'toDo.completed',
+
+		'toDo.create',
+		
+		'toDo.list',
+
         'toDo.component.navbar'
 
     ])

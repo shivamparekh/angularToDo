@@ -8,10 +8,9 @@ function navBar() {
 
         restrict: 'E',
         scope: {
-            
-            navData: '@'
+            navData: '='
         },
-        templateUrl: '/toDo/features/components/navbar/navbar.html',
+        templateUrl: '/toDoList/features/components/navbar/navbar.html',
         controller: NavBarCtrl,
         controllerAs: 'NavBarVM',
         bindToController: true
@@ -22,5 +21,5 @@ function navBar() {
 function NavBarCtrl() {
 
     var vm = this;
-    
+
 }

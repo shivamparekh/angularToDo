@@ -31,6 +31,10 @@ app.use(bodyParser.text({ type: 'text/html' }));
 
 app.use(express.static(__dirname + "/app"));
 
+var getRoute = require("./api/get-todo.js")(app);
+var putRoute = require("./api/put-todo.js")(app);
+var postRoute = require("./api/post-todo.js")(app);
+
 // listener
 
 app.listen(3000, function() {
