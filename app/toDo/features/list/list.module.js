@@ -1,2 +1,6 @@
 angular 
-	.module('toDo.list', []);
+	.module('toDo.list', [
+
+		'toDo.components.content'
+
+		]);

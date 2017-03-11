@@ -7,7 +7,7 @@ var mongoose = require('mongoose');
 var db = require('./../db/connection.js'); 
 var ToDo = require('./../db/todo.models.js'); 
 
-// Require bluebird as promise 
+// require bluebird as promise 
 
 var Promise = require('bluebird');
 

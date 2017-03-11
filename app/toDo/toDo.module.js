@@ -12,7 +12,9 @@ angular
 		
 		'toDo.list',
 
-        'toDo.component.navbar'
+        'toDo.component.navbar',
+
+        'toDo.component.content'
 
     ])
 

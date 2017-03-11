@@ -1,2 +1,6 @@
 angular
-	.module('toDo.completed', []);
+	.module('toDo.completed', [
+
+		'toDo.components.content'
+
+		]);

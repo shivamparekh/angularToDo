@@ -21,7 +21,7 @@ module.exports = function(app) {
 
 	 	var newItem = new ToDo ({
 
-	 		text: req.body.toDoItem,
+	 		text: req.body.toDo,
 	 		date: req.body.dueDate,
 	 		completed: false
 	 		
